@@ -8,6 +8,9 @@ gem "rails", "~> 7.1.2"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
+# Use Sass to process CSS
+gem "sassc-rails"
+
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 
@@ -40,6 +43,12 @@ gem "tzinfo-data", platforms: %i[ windows jruby ]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
+
+# Flexible authentication solution for Rails with Warden
+gem 'devise', '~> 4.9', '>= 4.9.3'
+
+# The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web
+gem 'bootstrap', '~> 5.3', '>= 5.3.2'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
