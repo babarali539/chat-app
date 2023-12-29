@@ -8,6 +8,8 @@ Rails.application.configure do
   # since you don't have to restart the web server when you make code changes.
   config.enable_reloading = true
 
+  config.session_store :cache_store
+
   # Do not eager load code on boot.
   config.eager_load = false
 
@@ -30,7 +32,7 @@ Rails.application.configure do
   else
     config.action_controller.perform_caching = false
 
-    config.cache_store = :null_store
+    # config.cache_store = :null_store
   end
 
   # Store uploaded files on the local file system (see config/storage.yml for options).

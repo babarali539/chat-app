@@ -50,6 +50,9 @@ gem 'devise', '~> 4.9', '>= 4.9.3'
 # The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web
 gem 'bootstrap', '~> 5.3', '>= 5.3.2'
 
+# Build reactive applications with the Rails tooling you already know and love.
+gem 'stimulus_reflex', '~> 3.4', '>= 3.4.1'
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
