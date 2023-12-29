@@ -9,7 +9,7 @@
         <p class="lead">Lorem Ipsum dolor sit amet. Lorem Ipsum dolor sit amet. </p>
         <% if current_user %>
           <p>
-            <a href="#" class="btn btn-primary shadow mr-2">Start Chatting</a>
+            <a href="<%= rooms_path %>" class="btn btn-primary shadow mr-2">Start Chatting</a>
             <span><%= button_to 'Logout', destroy_user_session_path, class: 'btn btn-outline-primary ms-2', method: :delete %></span>
           </p>
         <% else %>

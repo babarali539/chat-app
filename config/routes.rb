@@ -5,4 +5,9 @@ Rails.application.routes.draw do
     get 'users', to: 'devise/sessions#new'
   end
   devise_for :users
+
+  resources :rooms do
+    resources :messages
+  end
+  get 'user/:id', to: 'users#show', as: 'user'
 end
