@@ -8,9 +8,21 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <style>
+      <%= ".msg-#{current_user&.id}" %> {
+        background: #05728f !important;
+        padding: 10px;
+        margin-right: 3px;
+      }
+      <%= ".cont-#{current_user&.id}" %> {
+        display: flex;
+        justify-content: flex-end
+      }
+    </style>
   </head>
 
-  <body>
+  <body class="container-fluid">
   <% if notice %>
     <p class="alert alert-success"><%= notice %></p>
   <% end %>

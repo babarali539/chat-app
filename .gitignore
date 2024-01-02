@@ -28,6 +28,12 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 /config/database.yml
+/.bundle
+/vendor/bundle
+/vendor/assets/bower_components
+
 .env
 .byebug_history
-.idea/*
+./public/assets
+ .idea/*
+ .rvmrc
