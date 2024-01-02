@@ -10,9 +10,9 @@ class Room < ApplicationRecord
 
   def broadcast_if_public
     if is_private
-      broadcast_append_to 'private_rooms'
+      broadcast_append_to 'rooms'
     else
-      broadcast_append_to 'public_rooms'
+      broadcast_append_to 'rooms'
     end
   end
 
